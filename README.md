@@ -43,7 +43,7 @@ Create a Windows x64 executable locally:
 dotnet publish AppleCIDR/AppleCIDR.csproj -c Release -r win-x64 --self-contained true -p:PublishSingleFile=true -p:IncludeNativeLibrariesForSelfExtract=true -p:EnableCompressionInSingleFile=true -o publish
 ```
 
-The published executable is `AppleCIDR.exe`. Release automation renames it to `AppleCIDR-win-x64.exe`.
+The published executable is `AppleCIDR.exe`.
 
 ## GitHub Actions Release
 
@@ -56,4 +56,4 @@ git tag v1.0.0
 git push origin v1.0.0
 ```
 
-Tagged builds upload `AppleCIDR-win-x64.exe` to a GitHub release.
+Tagged builds upload `AppleCIDR.exe` to a GitHub release.

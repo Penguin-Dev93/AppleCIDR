@@ -13,15 +13,19 @@
         WindowStyle="None"
         ResizeMode="CanMinimize"
         Icon="Resources/icon.ico"
-        Background="{DynamicResource AppBackground}">
-  <Grid Background="{DynamicResource AppBackground}">
+        AllowsTransparency="True"
+        Background="Transparent">
+  <Border Background="{DynamicResource AppBackground}"
+          CornerRadius="28"
+          SnapsToDevicePixels="True">
+  <Grid Background="Transparent">
     <Grid.RowDefinitions>
       <RowDefinition Height="44" />
       <RowDefinition Height="*" />
     </Grid.RowDefinitions>
 
     <Border Grid.Row="0"
-            Background="{DynamicResource AppBackground}"
+            Background="Transparent"
             Padding="18,8"
             MouseLeftButtonDown="TitleBar_MouseLeftButtonDown">
       <Grid>
@@ -230,4 +234,5 @@
       </Grid>
     </ScrollViewer>
   </Grid>
+  </Border>
 </Window>
