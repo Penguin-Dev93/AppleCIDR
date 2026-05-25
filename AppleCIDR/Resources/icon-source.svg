@@ -1,0 +1,38 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="48" x2="448" y2="464" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#13142B"/>
+      <stop offset="1" stop-color="#0D0E1A"/>
+    </linearGradient>
+    <clipPath id="appleClip">
+      <path d="M260 134C245 112 222 101 195 105C169 109 148 129 138 158C119 211 144 319 196 382C211 400 231 405 250 394C258 389 266 389 274 394C293 405 313 400 328 382C380 319 405 211 386 158C376 129 355 109 329 105C301 101 276 112 260 134Z"/>
+    </clipPath>
+    <linearGradient id="cells" x1="138" y1="105" x2="386" y2="400" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#A78BFA"/>
+      <stop offset="1" stop-color="#6C63FF"/>
+    </linearGradient>
+    <filter id="shadow" x="94" y="76" width="334" height="364" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#000000" flood-opacity="0.32"/>
+    </filter>
+  </defs>
+  <rect x="32" y="32" width="448" height="448" rx="96" fill="url(#bg)"/>
+  <rect x="50" y="50" width="412" height="412" rx="82" stroke="#2A2B45" stroke-width="4"/>
+  <g filter="url(#shadow)">
+    <path d="M283 111C296 82 322 68 352 66C354 95 335 123 303 135C297 128 290 120 283 111Z" fill="#4ADE80"/>
+    <path d="M259 131C254 102 261 80 284 63" stroke="#A78BFA" stroke-width="18" stroke-linecap="round"/>
+    <g clip-path="url(#appleClip)">
+      <rect x="120" y="94" width="284" height="314" fill="url(#cells)"/>
+      <rect x="142" y="126" width="76" height="76" rx="18" fill="#7C74FF"/>
+      <rect x="226" y="126" width="76" height="76" rx="18" fill="#A78BFA"/>
+      <rect x="310" y="126" width="76" height="76" rx="18" fill="#6C63FF"/>
+      <rect x="142" y="210" width="76" height="76" rx="18" fill="#A78BFA"/>
+      <rect x="226" y="210" width="76" height="76" rx="18" fill="#4ADE80"/>
+      <rect x="310" y="210" width="76" height="76" rx="18" fill="#7C74FF"/>
+      <rect x="142" y="294" width="76" height="76" rx="18" fill="#6C63FF"/>
+      <rect x="226" y="294" width="76" height="76" rx="18" fill="#7C74FF"/>
+      <rect x="310" y="294" width="76" height="76" rx="18" fill="#A78BFA"/>
+      <path d="M222 96V410M306 96V410M120 206H404M120 290H404" stroke="#13142B" stroke-opacity="0.55" stroke-width="10"/>
+    </g>
+    <path d="M260 134C245 112 222 101 195 105C169 109 148 129 138 158C119 211 144 319 196 382C211 400 231 405 250 394C258 389 266 389 274 394C293 405 313 400 328 382C380 319 405 211 386 158C376 129 355 109 329 105C301 101 276 112 260 134Z" stroke="#E8E8F0" stroke-opacity="0.2" stroke-width="6"/>
+  </g>
+</svg>

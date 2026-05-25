@@ -12,6 +12,7 @@
         WindowStartupLocation="CenterScreen"
         WindowStyle="None"
         ResizeMode="CanMinimize"
+        Icon="Resources/icon.ico"
         Background="{DynamicResource AppBackground}">
   <Grid Background="{DynamicResource AppBackground}">
     <Grid.RowDefinitions>
