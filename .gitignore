@@ -1,0 +1,15 @@
+bin/
+obj/
+.vs/
+.vscode/
+*.user
+*.suo
+*.cache
+*.log
+TestResults/
+publish/
+
+# Local-only project context
+AGENTS.md
+APP_SPEC.md
+UI_UX_DESIGN_GUIDE.md
