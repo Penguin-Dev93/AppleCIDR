@@ -31,7 +31,7 @@ public partial class MainWindow : Window
             Source = new Uri(themePath, UriKind.Relative)
         };
 
-        ResourceDictionaryCollection dictionaries = Application.Current.Resources.MergedDictionaries;
+        var dictionaries = Application.Current.Resources.MergedDictionaries;
         ResourceDictionary? currentTheme = dictionaries.FirstOrDefault(dictionary =>
             dictionary.Source is not null &&
             (dictionary.Source.OriginalString.EndsWith("DarkTheme.xaml", StringComparison.OrdinalIgnoreCase) ||
